@@ -15,7 +15,7 @@
 #' @examples
 #' myttest(x=rnorm(30,10,12), y=rnorm(40, 7, 10))
 myttest<-function(x,y,paired=FALSE, alpha=0.05){
-  if(paired=="FALSE"){
+  if(paired=="FALSE"){ # not paired then ...
     vt=var.test(x,y)
 
   if(vt$p.value>0.05){
@@ -25,12 +25,14 @@ myttest<-function(x,y,paired=FALSE, alpha=0.05){
     tt<-t.test(x,y,var.equal = FALSE, conf.level=1-alpha)
   }
   }
-  else{
+  else{ # paired so check lengths
     stopifnot(length(x)==length(y))
     tt<-t.test(x,y,paired=TRUE,conf.level=1-alpha)
   }
-  df = data.frame(x=x,y=y)
+  data = c(x,y)
+  v = rep(c("x","y"), c(length(x),length(y)))
+  df = data.frame(data=data, v=v)
   lst=list(ttest=tt, df=df)
- `mytt`<-class(lst)
+ class(lst)<-"mytt"
  lst
 }
