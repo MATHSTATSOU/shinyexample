@@ -30,7 +30,7 @@ myttest<-function(x,y,paired=FALSE, alpha=0.05){
     tt<-t.test(x,y,paired=TRUE,conf.level=1-alpha)
   }
   data = c(x,y)
-  v = rep(c("x","y"), c(length(x),length(y)))
+  v = rep(c("x","y"), c(length(x),length(y))) # Creation of qual var
   df = data.frame(data=data, v=v)
   lst=list(ttest=tt, df=df, paired = paired)
  class(lst)<-"mytt"# New class
