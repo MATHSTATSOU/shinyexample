@@ -33,6 +33,6 @@ myttest<-function(x,y,paired=FALSE, alpha=0.05){
   v = rep(c("x","y"), c(length(x),length(y)))
   df = data.frame(data=data, v=v)
   lst=list(ttest=tt, df=df, paired = paired)
- class(lst)<-"mytt"
+ class(lst)<-"mytt"# New class
  lst
 }
