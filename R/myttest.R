@@ -36,3 +36,16 @@ myttest<-function(x,y,paired=FALSE, alpha=0.05){
  class(lst)<-"mytt"# New class
  lst
 }
+
+#' Another function
+#'
+#' @param x vector
+#'
+#' @return plot
+#' @export
+#'
+#' @examples
+#' x<-1:10;plot(x)
+mynewf<-function(x){
+  plot(x)
+}
