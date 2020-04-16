@@ -18,7 +18,7 @@ myttest<-function(x,y,paired=FALSE, alpha=0.05){
   if(paired=="FALSE"){ # not paired then ...
     vt=var.test(x,y)
 
-  if(vt$p.value>0.05){
+  if(vt$p.value>alpha){
     tt<-t.test(x,y,var.equal = TRUE, conf.level=1-alpha)
   }
   else{
