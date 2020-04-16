@@ -8,18 +8,19 @@
 #
 
 library(shiny)
+#library(shinyexample)
 
 # Define UI for application that draws a histogram
 shinyUI(fluidPage(
 
     # Application title
-    titlePanel("Old Faithful Geyser Data"),
+    titlePanel("Old Faithful Geyser Data, and Normal"),
 
     # Sidebar with a slider input for number of bins
     sidebarLayout(
         sidebarPanel(
             sliderInput("bins",
-                        "Number of bins:",
+                        "Number of bins: waiting time",
                         min = 1,
                         max = 50,
                         value = 30)
@@ -28,6 +29,31 @@ shinyUI(fluidPage(
         # Show a plot of the generated distribution
         mainPanel(
             plotOutput("distPlot")
+        )
+    ),
+
+
+    sidebarLayout(
+        sidebarPanel(
+            sliderInput("bins2",
+                        "Number of bins: Normal",
+                        min = 1,
+                        max = 50,
+                        value = 30),
+
+
+        sliderInput("mult",
+                    "multiplier for mean: Normal",
+                    min = 1,
+                    max = 1.1,
+                    value = 1,
+                    step=0.001)
+    ),
+
+        # Show a plot of the generated distribution
+        mainPanel(
+            plotOutput("distPlot2"),
+            plotOutput("box")
         )
     )
 ))
