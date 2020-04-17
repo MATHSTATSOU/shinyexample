@@ -45,7 +45,7 @@ y <- response()$y
 
     output$box <- renderPlot({
         y <- response()$y
-    out<-myttest(x=x,y=y,paired = FALSE)
+    out<-myttest(x=x,y=y,paired = FALSE,alpha=0.05)
 
     plot(out)
     })
