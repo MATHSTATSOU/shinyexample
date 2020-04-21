@@ -45,7 +45,7 @@ shinyUI(fluidPage(
         sliderInput("mult",
                     "multiplier for mean: Normal",
                     min = 1,
-                    max = 1.1,
+                    max = 1.05,
                     value = 1,
                     step=0.001)
     ),
