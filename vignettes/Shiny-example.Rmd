@@ -1,0 +1,93 @@
+---
+title: "Shiny-example"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Shiny-example}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(shinyexample)
+```
+
+
+# Introduction
+
+The package `shinyexample` is made to help students make a project that includes a shiny app.
+
+# Functions
+
+You can use one file for each function if you wish -- although this might get a little messy if the number of function go past about 10.
+
+It would be better to classify the function by what they do and then put all topic similar functions in one file.
+
+## OOP
+
+In this package we will be using `S3` OOP -- which is the commonly used object oriented form in R package making.
+
+See <https://adv-r.hadley.nz/s3.html> for more information.
+
+## Documentation
+
+There should be two forms of documentation
+  
+  1. Function specific using Roxygen.
+  2. Vignette -- long form.
+  
+# Constructor
+
+The first function is `myttest` and it produces a list of useful information to be processed by method functions.
+
+```{r}
+a <- rnorm(40, 20, 10)
+b <- rnorm(30, 10, 12)
+
+out <- myttest(x=a, y=b, paired = FALSE)
+class(out)
+```
+
+
+Notice that the output is of class `r class(out)`
+
+The function returns a list of components:
+
+```{r}
+names(out)
+```
+
+The components can then be operated on by an appropriate method attached to a generic.
+
+# Method
+
+The method is attached to the generic finction `plot()`
+
+```{r, eval=FALSE}
+plot.mytt()
+```
+
+
+
+We can call it by simply invoking the `plot()` function
+
+```{r}
+plot(out)
+```
+
+
+
+# Shiny server
+
+These two functions have been placed into a shiny app and can be invoked using 
+
+```{r,eval = FALSE}
+shinyhist()
+```
+
