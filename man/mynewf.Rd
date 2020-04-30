@@ -16,5 +16,5 @@ plot
 Another function
 }
 \examples{
-x<-1:10;plot(x)
+x<-1:10;mynewf(x)
 }

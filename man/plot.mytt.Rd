@@ -16,5 +16,5 @@ plot
 Method for plotting class mytt
 }
 \examples{
-plot(x)
+l<-myttest(x=rnorm(30), y=rnorm(40,0.5));plot(l)
 }

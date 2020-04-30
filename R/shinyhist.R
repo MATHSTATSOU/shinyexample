@@ -7,7 +7,7 @@
 #' @export
 #'
 #' @examples
-#' shinyhist()
+#' \dontrun{ shinyhist()}
 shinyhist<-function(){
   shiny::runApp(system.file("shiny", package="shinyexample"),launch.browser = TRUE)
 }

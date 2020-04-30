@@ -6,7 +6,7 @@
 #' @export
 #'
 #' @examples
-#' plot(x)
+#' l<-myttest(x=rnorm(30), y=rnorm(40,0.5));plot(l)
 plot.mytt <- function(x){
   library(ggplot2)
   df<-x$df

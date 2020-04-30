@@ -16,5 +16,5 @@ This shows you where to place stuff
 Get into reactive programming with shiny
 }
 \examples{
-shinyhist()
+\dontrun{ shinyhist()}
 }

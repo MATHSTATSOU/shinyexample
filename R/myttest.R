@@ -45,7 +45,7 @@ myttest<-function(x,y,paired=FALSE, alpha=0.05){
 #' @export
 #'
 #' @examples
-#' x<-1:10;plot(x)
+#' x<-1:10;mynewf(x)
 mynewf<-function(x){
   plot(x)
 }
