@@ -6,7 +6,10 @@ Author: Dr Wayne Stewart
 Maintainer: Me myself and I <wayne.s.stewart@ou.edu>
 Description: This is a quick and instructional package.
 License: MIT
-Imports: shiny, ggplot2
+Imports: 
+  shiny, 
+  ggplot2,
+  magrittr
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.0.2

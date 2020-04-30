@@ -2,12 +2,22 @@
 #'
 #' @param x object class mytt
 #'
+#' @param ... extra options to be sent to method
+#'
 #' @return plot
+#' @importFrom ggplot2 ggplot aes ggtitle geom_boxplot
+#'
+#' @importFrom graphics plot
+#'
+#' @importFrom magrittr `%>%`
+#'
+#' @importFrom stats var.test t.test
+#'
 #' @export
 #'
 #' @examples
 #' l<-myttest(x=rnorm(30), y=rnorm(40,0.5));plot(l)
-plot.mytt <- function(x){
+plot.mytt <- function(x, ...){
   library(ggplot2)
   df<-x$df
   g<-ggplot(df, aes(x=v,y=data)) + geom_boxplot(aes(fill=v))

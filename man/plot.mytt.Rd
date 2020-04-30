@@ -4,10 +4,12 @@
 \alias{plot.mytt}
 \title{Method for plotting class mytt}
 \usage{
-\method{plot}{mytt}(x)
+\method{plot}{mytt}(x, ...)
 }
 \arguments{
 \item{x}{object class mytt}
+
+\item{...}{extra options to be sent to method}
 }
 \value{
 plot
