@@ -15,6 +15,9 @@ plot
 \description{
 Another function
 }
+\details{
+You may add as many functions as you wish in this file and document them in Roxygen
+}
 \examples{
 x<-1:10;mynewf(x)
 }

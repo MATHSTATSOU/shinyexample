@@ -5,7 +5,7 @@ Version: 0.1.0
 Author: Dr Wayne Stewart
 Maintainer: Me myself and I <wayne.s.stewart@ou.edu>
 Description: This is a quick and instructional package.
-License: MIT
+License: MIT + file LICENSE
 Imports: 
   shiny, 
   ggplot2,

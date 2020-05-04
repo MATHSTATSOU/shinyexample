@@ -1,10 +1,15 @@
-#' Method for plotting class mytt
+#' @title  Method for plotting class mytt
+#'
+#' @description Makes a boxplot using an object of class mytt
+#'
+#' @details The function \code{myttest()} produces a list of class mytt, which has three components. These are sourced from the object and used in \code{plot.mytt()}
 #'
 #' @param x object class mytt
 #'
 #' @param ... extra options to be sent to method
 #'
-#' @return plot
+#' @return  A boxplot of the two samples using \code{ggplot()}
+#'
 #' @importFrom ggplot2 ggplot aes ggtitle geom_boxplot
 #'
 #' @importFrom graphics plot

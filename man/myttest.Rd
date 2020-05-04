@@ -27,3 +27,10 @@ The constructor function makes a list that can be worked and further processed w
 \examples{
 myttest(x=rnorm(30,10,12), y=rnorm(40, 7, 10))
 }
+\seealso{
+\code{\link{t.test}} for more information about t tests
+}
+\keyword{NHST}
+\keyword{t.test}
+\keyword{testing}
+\keyword{ttest}

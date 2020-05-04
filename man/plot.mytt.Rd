@@ -12,10 +12,13 @@
 \item{...}{extra options to be sent to method}
 }
 \value{
-plot
+A boxplot of the two samples using \code{ggplot()}
 }
 \description{
-Method for plotting class mytt
+Makes a boxplot using an object of class mytt
+}
+\details{
+The function \code{myttest()} produces a list of class mytt, which has three components. These are sourced from the object and used in \code{plot.mytt()}
 }
 \examples{
 l<-myttest(x=rnorm(30), y=rnorm(40,0.5));plot(l)
