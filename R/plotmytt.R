@@ -18,6 +18,8 @@
 #'
 #' @importFrom stats var.test t.test
 #'
+#' @rdname plot.mytt
+#'
 #' @export
 #'
 #' @examples

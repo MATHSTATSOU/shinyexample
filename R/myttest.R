@@ -1,8 +1,8 @@
-#'@title A constructor function for t tests
+#' @title A constructor function for t tests
 #'
-#'@description   This is an example of what can be done with S3 OOP
+#' @description   This is an example of what can be done with S3 OOP
 #'
-#'@details The constructor function makes a list that can be worked and further processed with an appropriate method(s)
+#' @details The constructor function makes a list that can be worked and further processed with an appropriate method(s)
 #'
 #' @param x vector of data
 #' @param y vector of data
@@ -15,6 +15,8 @@
 #' @export
 #'
 #' @keywords ttest t.test testing NHST
+#'
+#'
 #'
 #' @seealso \code{\link{t.test}} for more information about t tests
 #'
