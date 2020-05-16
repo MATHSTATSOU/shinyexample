@@ -36,7 +36,7 @@ When building the server function in the app make sure your remember the three s
 \section{Shiny reactivity}{
 
 
-The main engine that drives \emph{shiny server} is the concept of \emph{reactivity}
+The main engine that drives \emph{shiny server} is the concept of \emph{reactivity} this is what makes shiny apps responsive.
 The concept is a very important one and you must understand it completely by visiting a video and then reading an article.
 \enumerate{
 \item Please visit \href{https://vimeo.com/rstudioinc/review/131218530/212d8a5a7a/#t=47m27s}{Reactivity}
